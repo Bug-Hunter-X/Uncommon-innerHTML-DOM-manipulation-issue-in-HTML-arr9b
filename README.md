@@ -1,0 +1,1 @@
+This repository demonstrates a subtle bug related to DOM manipulation using innerHTML in HTML. The bug occurs when attempting to add a new element to the DOM using innerHTML if the element is not already present. The bugSolution.html file provides a corrected version.
