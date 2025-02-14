@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+  <script>
+    //Incorrectly using innerHTML to add the element
+    document.getElementById("myDiv").innerHTML = "<p>This is a paragraph</p><div id='newDiv'>This div is not added correctly</div>";
+    document.getElementById("newDiv").innerHTML = "This text replaces the div content";
+  </script>
+</body>
+</html>
